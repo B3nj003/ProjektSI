@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+:root{
+    --main-color: rgb(16,22,46);
+    --secondary-color: rgb(44, 67, 160);
+    --non-primary-color: rgb(36,43,79);
+    --black: rgb(51,51,51);
+    --bg: rgb(220,215,213);
+    --border: 1.6px solid rgb(26,29,44);
+}
+*{
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 14px;
+    overflow-x: hidden;
+    scroll-padding-top: 144px;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 12.8px;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(255,255,255);
+    border-radius: 80px;
+}
+body{
+    background: var(--bg);
+}
+.header-glavni{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header-glavni .logo img{
+    height: 70px;
+    width: 80px;
+    max-height: 100px;
+    max-width: 100px;
+}
+.header-glavni .ikonice i{
+    color: var(--non-primary-color);
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 32px;
+}
+.header-glavni .ikonice i:hover{
+    color: var(--secondary-color);
+    transition: all 0.4s ease 0s;
+}
+#meni{
+    display: none;
+}
+.header-glavni .pretrazivac{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: var(--non-primary-color);
+    width: 800px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header-glavni .pretrazivac input{
+    height: 100%;
+    width: 100%;
+    font-size: 25.6;
+    color: var(--black);
+    padding: 16px;
+    text-transform: none;
+}
+.header-glavni .pretrazivac label{
+    cursor: pointer;
+    font-size: 35.2px;
+    margin-right: 24px;
+    color: var(--black);
+}
